@@ -1,17 +1,9 @@
 {
-  "name": "faryal-engine",
+  "name": "faryal-engine-root",
   "version": "1.0.0",
-  "description": "Faryal Al Hosary — Luxury Bridal Rental Engine",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "migrate": "node schema.js"
-  },
-  "type": "commonjs",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "pg": "^8.20.0"
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
   }
 }
