@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: faryal-engine
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
